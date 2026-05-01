@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AI Innovators | Leilah A. Spalding</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Leilah Spalding</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Portfolio</a></li>
+					<li class="active"><a href="project2.html">AI Innovators</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/leilah-spalding/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/leispa000" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+				<section class="post">
+					<header class="major">
+						<h1>AI Innovators</h1>
+						<p>What Makes a Song Go Viral?<br />
+						Analyzing Spotify Audio Features &amp; Popularity</p>
+					</header>
+
+					<div class="image main"><img src="images/pic03.jpg" alt="AI Innovators Spotify Project" /></div>
+
+					<!-- Overview -->
+					<h2>Project Overview</h2>
+					<p>Spotify serves over 600 million users worldwide, and its recommendation engine shapes what
+					billions of people listen to every day. But what actually makes a song popular? This project
+					uses Spotify's own machine-learning-derived audio metrics — danceability, energy, valence,
+					tempo, and more — to explore what separates a hit from the noise across 114,000 tracks and
+					114 genres.</p>
+
+					<ul>
+						<li><strong>Course:</strong> MATH 014 – Introduction to Data Science Honors, Howard University</li>
+						<li><strong>Team:</strong> AI Innovators | Spring 2026</li>
+						<li><strong>Dataset:</strong> Spotify Tracks Dataset — 114,000 tracks, 114 genres</li>
+						<li><strong>Tools:</strong> Python, pandas, NumPy</li>
+						<li><strong>Source:</strong> <a href="https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset" target="_blank">Kaggle — Spotify Tracks Dataset</a></li>
+					</ul>
+
+					<!-- Central Question -->
+					<h2>Central Question</h2>
+					<p><em>What audio features most strongly predict a song's popularity on Spotify?</em></p>
+
+					<!-- Key Findings -->
+					<h2>Key Findings</h2>
+
+					<p><strong>Popularity is rare.</strong> The average track scores only 33 out of 100 on
+					Spotify's popularity scale, and fewer than 5% of songs ever break a score of 70. Truly
+					viral hits are the extreme exception, not the rule.</p>
+
+					<p><strong>Danceability and energy help, but don't explain everything.</strong> Many highly
+					danceable tracks still have low popularity scores, suggesting that genre, artist reputation,
+					and recency matter just as much as audio features. A high "grooviness score" — a custom
+					metric combining danceability and energy — identifies banger tracks, but popularity requires
+					more than just being upbeat.</p>
+
+					<p><strong>The dataset skews major and fast.</strong> About 64% of tracks are in a major
+					key, and the average tempo is ~122 BPM — consistent with the dominance of pop and
+					commercial music. G and C are the most common keys, aligning with music theory knowledge
+					about beginner-friendly and widely used keys.</p>
+
+					<p><strong>Only 8.5% of tracks are explicit.</strong> The dataset skews heavily toward
+					non-explicit content, which reflects either Spotify's catalog composition or the dataset's
+					sampling method.</p>
+
+					<!-- Methods -->
+					<h2>Methods</h2>
+					<p>The project followed a two-phase approach. In Phase 1 (Dataset Reconnaissance), we loaded
+					and explored the dataset, identified data types, produced summary statistics, and flagged
+					data quality issues — including tracks with impossible zero values for tempo and duration.
+					In Phase 2 (Data Wrangling), we engineered two new features: <code>duration_min</code>
+					(track length in minutes) and <code>grooviness_score</code> (average of danceability and
+					energy). We then filtered the dataset into meaningful subsets — high-popularity tracks,
+					highly danceable tracks, and "banger" tracks that are both popular and danceable.</p>
+
+					<!-- Interesting Observations -->
+					<h2>Interesting Observations</h2>
+					<ul>
+						<li>The Beatles, George Jones, and Stevie Wonder are the most represented artists —
+						suggesting classic and legacy artists dominate catalog depth on Spotify.</li>
+						<li>The dataset contains exactly 1,000 tracks per genre — a perfectly balanced sample
+						ideal for fair cross-genre comparisons.</li>
+						<li>Several tracks have a tempo or duration of zero, which is physically impossible
+						and reflects data collection errors that must be cleaned before modeling.</li>
+					</ul>
+
+					<!-- Next Steps -->
+					<h2>Next Steps (Part 2)</h2>
+					<p>Part 2 of this project will focus on visualization — exploring how audio features differ
+					across musical styles and whether those differences correlate with popularity. The perfectly
+					balanced genre distribution makes this dataset ideal for fair cross-genre comparisons.</p>
+
+					<ul class="actions special">
+						<li><a href="https://github.com/leispa000" class="button large">View on GitHub</a></li>
+						<li><a href="index.html" class="button large">← Back to Portfolio</a></li>
+					</ul>
+
+				</section>
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section class="split contact">
+					<section>
+						<h3>Email</h3>
+						<p><a href="mailto:leilahspalding@gmail.com">leilahspalding@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/leilah-spalding/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/leispa000" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Leilah A. Spalding</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
